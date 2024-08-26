@@ -1,5 +1,7 @@
 ## Dynamic State Machine with Multithreading and Event Handling in Zephyr RTOS
 
+![image](https://github.com/user-attachments/assets/4ded47da-827f-47ec-9753-f48e3ea7339c)
+
 ### Introduction
 
 This project demonstrates the implementation of a dynamic state machine with multithreading and event handling using the Zephyr Real-Time Operating System (RTOS). The application is designed to showcase how multiple threads can interact through event-driven programming and manage different states.
@@ -8,6 +10,7 @@ This project demonstrates the implementation of a dynamic state machine with mul
 
 - **Operating System**: Make sure you have a compatible Linux distribution installed (Ubuntu is recommended).
 - **Zephyr RTOS**: This project was built and tested using Zephyr RTOS version 3.7.99. Compatibility with future versions is not guaranteed.
+- **Board Compatibility**: This project is designed to be flexible with any board supported by Zephyr RTOS. However, for maximum compatibility and ease of use, especially for those who want to quickly clone and try the project on their systems without additional hardware, we use the QEMU emulated board (`qemu_x86`). This allows you to simulate a Zephyr environment directly on your computer.
 
 ### Initial Setup
 
@@ -82,7 +85,6 @@ Follow these steps to set up your environment for developing with Zephyr RTOS ve
 
 ### Notes
 
-- **Board Compatibility**: This project is designed to be flexible with any board supported by Zephyr RTOS. However, for maximum compatibility and ease of use, especially for those who want to quickly clone and try the project on their systems without additional hardware, we use the QEMU emulated board (`qemu_x86`). This allows you to simulate a Zephyr environment directly on your computer.
 - This project utilizes specific features available in Zephyr RTOS version 3.7.99. Be aware that differences in future Zephyr versions may affect compatibility.
 - The dynamic state machine and multithreading handling are tailored for educational purposes and might require optimizations for production environments.
 - **Further Setup and Configuration**: For more comprehensive setup and configuration guidelines, you can refer to the [Zephyr Project Documentation](https://docs.zephyrproject.org/latest/).
